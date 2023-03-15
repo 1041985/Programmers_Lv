@@ -1,7 +1,7 @@
 class Solution {
     // 변수 접근을 위한 전역 변수들.
-    static int numberOfArea;
-    static int maxSizeOfOneArea;
+    // static int numberOfArea;
+    // static int maxSizeOfOneArea;
     // 한 영역의 수를 저장하는 변수.
     static int temp_cnt = 0;
     // 좌표에서의 상,하,좌,우 탐색을 위한 배열.
@@ -36,8 +36,8 @@ class Solution {
     
     public int[] solution(int m, int n, int[][] picture) {
         // 1. 초기화 꼭! 하기.
-        numberOfArea =0;
-        maxSizeOfOneArea=0;
+        int numberOfArea =0;
+        int maxSizeOfOneArea=0;
         int[] answer = new int[2];
         answer[0] = numberOfArea;
         answer[1] = maxSizeOfOneArea;
