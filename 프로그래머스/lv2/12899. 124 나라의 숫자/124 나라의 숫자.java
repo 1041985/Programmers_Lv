@@ -2,19 +2,13 @@
 
 class Solution {
     public String solution(int n) {        
-       // String answer = "";
-        int num = 0;
-        StringBuilder sb = new StringBuilder();
-        while(n>0){
-            num = n%3;
-            n/=3;
-            if(num==0){
-                num=4;
-                n-=1;
-            }
-            //answer = num+answer;
-            sb.insert(0, num);
-        }
-        return sb.toString();
+             String[] num = {"4","1","2"};
+      String answer = "";
+
+      while(n > 0){
+          answer = num[n % 3] + answer;
+          n = (n - 1) / 3;
+      }
+      return answer;
     }
 }
