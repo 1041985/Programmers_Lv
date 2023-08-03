@@ -5,10 +5,6 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         int n = sc.nextInt();
-        String stst = ""; 
-        for(int i=0;i<n;i++){
-            stst = stst + str;
-        }
-        System.out.println(stst);
+        System.out.println(str.repeat(n));
     }
 }
